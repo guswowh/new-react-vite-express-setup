@@ -11,12 +11,3 @@ router.get('/*', function (req, res) {
 })
 
 module.exports = router
-
-router.post('/test', function (req, res) {
-  console.log('front call test')
-  console.log(req.body)
-
-  return res.status(200).json({
-    myMessage: 'you got data',
-  })
-})
